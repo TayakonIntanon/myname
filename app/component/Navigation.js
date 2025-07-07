@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 
 export default function Navigation() {
   return (
@@ -14,13 +14,13 @@ export default function Navigation() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+          <a className="nav-link active" aria-current="page" href="/">หน้าแรก</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">เกี่ยวกับเรา</a>
+          <a className="nav-link" href="/about">เกี่ยวกับเรา</a>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="/service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             บริการของเรา
           </a>
           <ul className="dropdown-menu">
@@ -31,7 +31,7 @@ export default function Navigation() {
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link" aria-disabled="true">ติดต่อเรา</a>
+          <a className="nav-link" aria-disabled="true" href="/contect">ติดต่อเรา</a>
         </li>
       </ul>
       <form className="d-flex" role="search">

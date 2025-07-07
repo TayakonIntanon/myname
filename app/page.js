@@ -1,9 +1,12 @@
-export default function About() {
+import Card from "./component/card";
+import Carousel from "./component/carousel";
+import Footer from "./component/Footer";
+export default function carousel() {
   return (
-    <>
-   <h1 className="text-4xl text-center text-blue-500"
-   >หน้าแรก
-    </h1>
-    </>
+    <div>
+      <Carousel/>
+      <Card/>
+      <Footer/>
+    </div>
   );
 }
